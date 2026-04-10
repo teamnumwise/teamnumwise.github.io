@@ -69,7 +69,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section id="about" className="relative py-24 lg:py-32 bg-slate-900 overflow-hidden">
+    <section id="about" className="relative py-16 lg:py-20 bg-slate-900 overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-sky-500/5 rounded-full blur-[120px]" />

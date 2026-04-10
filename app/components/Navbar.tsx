@@ -68,13 +68,7 @@ export default function Navbar() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a
-              href="#contact"
-              className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
-            >
-              Log In
-            </a>
+          <div className="hidden lg:flex items-center">
             <a
               href="#contact"
               className="inline-flex items-center px-6 py-2.5 rounded-full bg-gradient-to-r from-sky-500 to-violet-600 text-white text-sm font-semibold shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 transition-all duration-300 hover:scale-[1.04] btn-shine"
@@ -127,13 +121,7 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <div className="pt-4 space-y-3">
-            <a
-              href="#contact"
-              className="block text-center py-3 px-4 rounded-xl text-slate-600 hover:bg-slate-50 font-medium transition-colors"
-            >
-              Log In
-            </a>
+          <div className="pt-4">
             <a
               href="#contact"
               className="block text-center py-3.5 rounded-full bg-gradient-to-r from-sky-500 to-violet-600 text-white font-semibold shadow-lg"

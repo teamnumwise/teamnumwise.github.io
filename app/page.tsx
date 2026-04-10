@@ -76,7 +76,7 @@ const industries = [
 
 function IndustriesSection() {
   return (
-    <section className="py-24 lg:py-32 bg-slate-50/50">
+    <section className="py-16 lg:py-20 bg-slate-50/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
@@ -150,94 +150,113 @@ function IndustriesSection() {
 
 /* ======= CTA Section ======= */
 function CTASection() {
+  const benefits = [
+    "Dedicated account manager & CPA team",
+    "Real-time financial dashboard access",
+    "Month-to-month — no long-term contracts",
+    "Onboarding completed in under 2 weeks",
+    "SOC 2 compliant & 256-bit encryption",
+  ];
+
   return (
-    <section id="contact" className="py-24 lg:py-32 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
-      {/* Background Decorations */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-sky-500/5 rounded-full blur-[150px]" />
-        <div className="absolute top-20 right-20 w-32 h-32 border border-white/[0.04] rounded-2xl rotate-12" />
-        <div className="absolute bottom-20 left-20 w-24 h-24 border border-white/[0.04] rounded-full" />
-      </div>
-
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-        <div className="reveal">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm font-semibold mb-8">
-            Ready to Get Started?
-          </span>
-        </div>
-
-        <h2 className="reveal text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
-          Transform Your{" "}
-          <span className="gradient-text">Financial Operations</span>{" "}
-          Today
-        </h2>
-
-        <p className="reveal text-lg lg:text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
-          Join 500+ businesses that trust NumWise for their accounting,
-          bookkeeping, and strategic financial needs. Schedule a free
-          consultation to see how we can help.
-        </p>
-
-        <div className="reveal flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="#"
-            className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-gradient-to-r from-sky-500 to-violet-600 text-white font-semibold text-lg shadow-xl shadow-sky-500/25 hover:shadow-sky-500/40 transition-all duration-300 hover:scale-[1.03] btn-shine"
-          >
-            Schedule a Free Consultation
-            <svg
-              className="ml-3 w-5 h-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </a>
-          <a
-            href="tel:+18001234567"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-white/20 text-white font-semibold text-lg hover:border-white/40 hover:bg-white/5 transition-all duration-300"
-          >
-            <svg
-              className="mr-2 w-5 h-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              />
-            </svg>
-            Call Us
-          </a>
-        </div>
-
-        {/* Trust Badges */}
-        <div className="reveal mt-12 flex flex-wrap items-center justify-center gap-8">
-          <div className="flex items-center gap-2 text-slate-500 text-sm">
-            <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-            SOC 2 Compliant
+    <section id="contact" className="py-16 lg:py-20 bg-white relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="reveal relative rounded-[2rem] overflow-hidden">
+          {/* Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-violet-600 via-violet-700 to-slate-900" />
+          <div className="absolute inset-0 opacity-10">
+            <div className="dot-pattern w-full h-full" />
           </div>
-          <div className="flex items-center gap-2 text-slate-500 text-sm">
-            <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-            </svg>
-            256-bit Encryption
-          </div>
-          <div className="flex items-center gap-2 text-slate-500 text-sm">
-            <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            No Long-term Contracts
+          {/* Decorative shapes */}
+          <div className="absolute top-0 right-0 w-80 h-80 bg-amber-400/20 rounded-full blur-[100px]" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-sky-400/15 rounded-full blur-[80px]" />
+          <div className="absolute top-10 right-10 w-20 h-20 border border-white/10 rounded-2xl rotate-12" />
+          <div className="absolute bottom-10 left-10 w-16 h-16 border border-white/10 rounded-full" />
+
+          {/* Content */}
+          <div className="relative grid lg:grid-cols-2 gap-10 lg:gap-0">
+            {/* Left Content */}
+            <div className="p-10 lg:p-16 flex flex-col justify-center">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-amber-300 text-sm font-semibold mb-8 w-fit">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Ready to Get Started?
+              </span>
+
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Know Your Numbers.
+                <br />
+                <span className="text-amber-400">Grow Your Vision.</span>
+              </h2>
+
+              <p className="text-lg text-violet-200 leading-relaxed mb-8 max-w-lg">
+                Schedule a free consultation and discover how NumWise can bring clarity to your
+                finances, save you money, and fuel your next stage of growth.
+              </p>
+
+              {/* Benefits List */}
+              <ul className="space-y-3 mb-10">
+                {benefits.map((b) => (
+                  <li key={b} className="flex items-center gap-3 text-white/90 text-sm">
+                    <div className="w-5 h-5 rounded-full bg-amber-400/20 flex items-center justify-center flex-shrink-0">
+                      <svg className="w-3 h-3 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    {b}
+                  </li>
+                ))}
+              </ul>
+
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-base shadow-xl shadow-amber-400/25 hover:shadow-amber-400/40 hover:bg-amber-300 transition-all duration-300 hover:scale-[1.03]"
+                >
+                  Schedule a Free Consultation
+                  <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+                <a
+                  href="tel:+18001234567"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-white/25 text-white font-semibold text-base hover:border-white/50 hover:bg-white/5 transition-all duration-300"
+                >
+                  <svg className="mr-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  (800) 123-4567
+                </a>
+              </div>
+            </div>
+
+            {/* Right - Image & Visual */}
+            <div className="relative hidden lg:flex items-end justify-end">
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80"
+                alt="Financial expert ready to help your business grow"
+                className="w-full h-full object-cover object-top"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-violet-700/60 via-transparent to-transparent" />
+
+              {/* Floating Stats Card */}
+              <div className="absolute bottom-8 left-8 bg-white/95 backdrop-blur-sm rounded-2xl p-5 shadow-2xl">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-extrabold text-slate-900">500+</div>
+                    <div className="text-sm text-slate-500">Businesses Served</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -257,13 +276,23 @@ export default function Home() {
           }
         });
       },
-      { threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.01 }
     );
 
     const revealEls = document.querySelectorAll(".reveal");
     revealEls.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
+    // Safety: reveal everything after 2s in case observer misses
+    const safety = setTimeout(() => {
+      document.querySelectorAll(".reveal:not(.active)").forEach((el) => {
+        el.classList.add("active");
+      });
+    }, 2000);
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(safety);
+    };
   }, []);
 
   return (
