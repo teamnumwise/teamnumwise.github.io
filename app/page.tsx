@@ -81,7 +81,7 @@ function IndustriesSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <div className="reveal">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-200/60 text-indigo-600 text-sm font-semibold mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-sm font-semibold mb-6">
               Industries We Serve
             </span>
           </div>
@@ -116,14 +116,14 @@ function IndustriesSection() {
 
               {/* Content */}
               <div className="relative p-8 flex flex-col justify-end min-h-[240px]">
-                <div className="text-white/70 mb-3 group-hover:text-sky-400 transition-colors">
+                <div className="text-white/70 mb-3 group-hover:text-yellow-400 transition-colors">
                   {ind.icon}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">
                   {ind.name}
                 </h3>
                 <p className="text-sm text-slate-300">{ind.desc}</p>
-                <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-sky-400 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-yellow-400 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                   Learn more
                   <svg
                     className="w-4 h-4"
@@ -163,13 +163,13 @@ function CTASection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="reveal relative rounded-[2rem] overflow-hidden">
           {/* Gradient Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-violet-600 via-violet-700 to-slate-900" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black via-zinc-900 to-black" />
           <div className="absolute inset-0 opacity-10">
             <div className="dot-pattern w-full h-full" />
           </div>
           {/* Decorative shapes */}
-          <div className="absolute top-0 right-0 w-80 h-80 bg-amber-400/20 rounded-full blur-[100px]" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-sky-400/15 rounded-full blur-[80px]" />
+          <div className="absolute top-0 right-0 w-80 h-80 bg-yellow-400/10 rounded-full blur-[100px]" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-yellow-400/5 rounded-full blur-[80px]" />
           <div className="absolute top-10 right-10 w-20 h-20 border border-white/10 rounded-2xl rotate-12" />
           <div className="absolute bottom-10 left-10 w-16 h-16 border border-white/10 rounded-full" />
 
@@ -177,7 +177,7 @@ function CTASection() {
           <div className="relative grid lg:grid-cols-2 gap-10 lg:gap-0">
             {/* Left Content */}
             <div className="p-10 lg:p-16 flex flex-col justify-center">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-amber-300 text-sm font-semibold mb-8 w-fit">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 text-yellow-400 text-sm font-semibold mb-8 w-fit">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -187,10 +187,10 @@ function CTASection() {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-6 leading-tight">
                 Know Your Numbers.
                 <br />
-                <span className="text-amber-400">Grow Your Vision.</span>
+                <span className="text-yellow-400">Grow Your Vision.</span>
               </h2>
 
-              <p className="text-lg text-violet-200 leading-relaxed mb-8 max-w-lg">
+              <p className="text-lg text-zinc-300 leading-relaxed mb-8 max-w-lg">
                 Schedule a free consultation and discover how NumWise can bring clarity to your
                 finances, save you money, and fuel your next stage of growth.
               </p>
@@ -199,8 +199,8 @@ function CTASection() {
               <ul className="space-y-3 mb-10">
                 {benefits.map((b) => (
                   <li key={b} className="flex items-center gap-3 text-white/90 text-sm">
-                    <div className="w-5 h-5 rounded-full bg-amber-400/20 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-3 h-3 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <div className="w-5 h-5 rounded-full bg-yellow-400/20 flex items-center justify-center flex-shrink-0">
+                      <svg className="w-3 h-3 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
@@ -213,7 +213,7 @@ function CTASection() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-amber-400 text-slate-900 font-bold text-base shadow-xl shadow-amber-400/25 hover:shadow-amber-400/40 hover:bg-amber-300 transition-all duration-300 hover:scale-[1.03]"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-yellow-400 text-black font-bold text-base shadow-xl shadow-yellow-400/25 hover:shadow-yellow-400/40 hover:bg-yellow-300 transition-all duration-300 hover:scale-[1.03]"
                 >
                   Schedule a Free Consultation
                   <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -240,13 +240,13 @@ function CTASection() {
                 className="w-full h-full object-cover object-top"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-violet-700/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent" />
 
               {/* Floating Stats Card */}
               <div className="absolute bottom-8 left-8 bg-white/95 backdrop-blur-sm rounded-2xl p-5 shadow-2xl">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-violet-100 flex items-center justify-center">
-                    <svg className="w-6 h-6 text-violet-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <div className="w-12 h-12 rounded-xl bg-yellow-100 flex items-center justify-center">
+                    <svg className="w-6 h-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>

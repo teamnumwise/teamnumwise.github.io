@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-14 md:h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-500 to-violet-600 flex items-center justify-center shadow-lg shadow-sky-500/20 group-hover:shadow-sky-500/40 transition-shadow">
+            <div className="w-10 h-10 rounded-xl bg-black flex items-center justify-center shadow-lg shadow-black/20 group-hover:shadow-black/40 transition-shadow">
               <svg
                 className="w-6 h-6 text-white"
                 fill="none"
@@ -71,7 +71,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center">
             <a
               href="#contact"
-              className="inline-flex items-center px-6 py-2.5 rounded-full bg-gradient-to-r from-sky-500 to-violet-600 text-white text-sm font-semibold shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 transition-all duration-300 hover:scale-[1.04] btn-shine"
+              className="inline-flex items-center px-6 py-2.5 rounded-full bg-yellow-400 text-black text-sm font-semibold shadow-lg shadow-yellow-400/25 hover:shadow-yellow-400/40 hover:bg-yellow-300 transition-all duration-300 hover:scale-[1.04] btn-shine"
             >
               Schedule a Call
             </a>
@@ -124,7 +124,7 @@ export default function Navbar() {
           <div className="pt-4">
             <a
               href="#contact"
-              className="block text-center py-3.5 rounded-full bg-gradient-to-r from-sky-500 to-violet-600 text-white font-semibold shadow-lg"
+              className="block text-center py-3.5 rounded-full bg-yellow-400 text-black font-semibold shadow-lg"
               onClick={() => setMobileOpen(false)}
             >
               Schedule a Call

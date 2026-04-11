@@ -27,16 +27,16 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-400 pt-20 pb-8">
+    <footer className="bg-black text-slate-400 pt-20 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2.5 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-500 to-violet-600 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-yellow-400 flex items-center justify-center">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-6 h-6 text-black"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -157,7 +157,7 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="reveal rounded-2xl bg-gradient-to-r from-sky-500/10 to-violet-500/10 border border-white/[0.06] p-8 sm:p-10 mb-16">
+        <div className="reveal rounded-2xl bg-gradient-to-r from-yellow-500/10 to-yellow-400/5 border border-white/[0.06] p-8 sm:p-10 mb-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
               <h4 className="text-white font-bold text-lg mb-2">
@@ -172,9 +172,9 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-grow sm:w-64 px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-500/50 focus:ring-1 focus:ring-sky-500/20 transition-all"
+                className="flex-grow sm:w-64 px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/20 transition-all"
               />
-              <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-violet-600 text-white text-sm font-semibold hover:shadow-lg hover:shadow-sky-500/25 transition-all duration-300 whitespace-nowrap">
+              <button className="px-6 py-3 rounded-xl bg-yellow-400 text-black text-sm font-semibold hover:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-400/25 transition-all duration-300 whitespace-nowrap">
                 Subscribe
               </button>
             </div>

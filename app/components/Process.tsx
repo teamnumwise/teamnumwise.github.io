@@ -52,7 +52,7 @@ export default function Process() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <div className="reveal">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-violet-50 border border-violet-200/60 text-violet-600 text-sm font-semibold mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-sm font-semibold mb-6">
               Our Process
             </span>
           </div>
@@ -76,19 +76,19 @@ export default function Process() {
               {/* Connector Line (desktop only) */}
               {i < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-10 left-[calc(50%+2rem)] right-0 h-[2px] z-0">
-                  <div className="w-full h-full bg-gradient-to-r from-sky-200 to-slate-200 rounded-full" />
+                  <div className="w-full h-full bg-gradient-to-r from-yellow-300 to-slate-200 rounded-full" />
                 </div>
               )}
 
               <div className="relative z-10 text-center">
                 {/* Number Badge */}
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-sky-500 to-violet-600 text-white text-2xl font-extrabold mb-6 shadow-lg shadow-sky-500/20 group-hover:scale-110 group-hover:shadow-sky-500/30 transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-black text-yellow-400 text-2xl font-extrabold mb-6 shadow-lg shadow-black/20 group-hover:scale-110 group-hover:shadow-black/30 transition-all duration-300">
                   {step.number}
                 </div>
 
                 {/* Icon */}
                 <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-slate-50 text-slate-400 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-slate-100 text-slate-500 flex items-center justify-center">
                     {step.icon}
                   </div>
                 </div>

@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-gradient-to-r from-sky-500 to-violet-600 text-white font-semibold text-base shadow-xl shadow-sky-500/25 hover:shadow-sky-500/40 transition-all duration-300 hover:scale-[1.03] btn-shine"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-black text-white font-semibold text-base shadow-xl shadow-black/20 hover:shadow-black/30 transition-all duration-300 hover:scale-[1.03] btn-shine"
               >
                 Schedule a Consultation
                 <svg
@@ -62,7 +62,7 @@ export default function Hero() {
               </a>
               <a
                 href="#services"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-slate-200 text-slate-700 font-semibold text-base hover:border-sky-300 hover:text-sky-600 transition-all duration-300"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-slate-200 text-slate-700 font-semibold text-base hover:border-yellow-400 hover:text-black transition-all duration-300"
               >
                 Explore Services
               </a>
@@ -115,9 +115,9 @@ export default function Hero() {
             {/* Floating Card - Revenue */}
             <div className="absolute -bottom-5 -left-4 sm:-left-8 bg-white rounded-2xl shadow-xl shadow-slate-900/10 p-4 animate-float border border-slate-100">
               <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-xl bg-emerald-50 flex items-center justify-center flex-shrink-0">
+                <div className="w-11 h-11 rounded-xl bg-yellow-50 flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-6 h-6 text-emerald-500"
+                    className="w-6 h-6 text-yellow-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -134,7 +134,7 @@ export default function Hero() {
                   <div className="text-sm font-bold text-slate-900">
                     Revenue Growth
                   </div>
-                  <div className="text-xs text-emerald-500 font-semibold">
+                  <div className="text-xs text-yellow-600 font-semibold">
                     +32% this quarter
                   </div>
                 </div>
@@ -144,9 +144,9 @@ export default function Hero() {
             {/* Floating Card - Tax */}
             <div className="absolute -top-3 -right-3 sm:-right-6 bg-white rounded-2xl shadow-xl shadow-slate-900/10 p-4 animate-float-delay border border-slate-100">
               <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-xl bg-sky-50 flex items-center justify-center flex-shrink-0">
+                <div className="w-11 h-11 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
                   <svg
-                    className="w-6 h-6 text-sky-500"
+                    className="w-6 h-6 text-slate-700"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -163,7 +163,7 @@ export default function Hero() {
                   <div className="text-sm font-bold text-slate-900">
                     Tax Filed
                   </div>
-                  <div className="text-xs text-sky-500 font-semibold">
+                  <div className="text-xs text-slate-600 font-semibold">
                     Saved $12,400
                   </div>
                 </div>

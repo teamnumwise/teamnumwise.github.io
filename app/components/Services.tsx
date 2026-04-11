@@ -8,14 +8,14 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
       </svg>
     ),
-    bg: "bg-white",
+    bg: "bg-zinc-50",
     textColor: "text-slate-900",
     descColor: "text-slate-500",
-    iconBg: "bg-slate-100",
-    iconColor: "text-violet-600",
-    arrowBg: "bg-slate-100",
+    iconBg: "bg-zinc-200",
+    iconColor: "text-slate-700",
+    arrowBg: "bg-zinc-200",
     arrowColor: "text-slate-600",
-    border: "border border-slate-200",
+    border: "border border-yellow-200",
   },
   {
     title: "Accounting Services",
@@ -26,14 +26,14 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
-    bg: "bg-violet-600",
+    bg: "bg-black",
     textColor: "text-white",
-    descColor: "text-violet-200",
+    descColor: "text-slate-300",
     iconBg: "bg-white/20",
     iconColor: "text-white",
     arrowBg: "bg-white/20",
     arrowColor: "text-white",
-    border: "border border-violet-500",
+    border: "border border-black",
   },
   {
     title: "Business Tax Services",
@@ -44,14 +44,14 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z" />
       </svg>
     ),
-    bg: "bg-amber-400",
+    bg: "bg-yellow-400",
     textColor: "text-slate-900",
     descColor: "text-slate-700",
-    iconBg: "bg-violet-600",
-    iconColor: "text-white",
+    iconBg: "bg-black",
+    iconColor: "text-yellow-400",
     arrowBg: "bg-white/60",
     arrowColor: "text-slate-700",
-    border: "border border-amber-300",
+    border: "border border-yellow-300",
   },
   {
     title: "Bookkeeping Services",
@@ -62,14 +62,14 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
       </svg>
     ),
-    bg: "bg-amber-50",
+    bg: "bg-zinc-50",
     textColor: "text-slate-900",
     descColor: "text-slate-500",
-    iconBg: "bg-slate-700",
-    iconColor: "text-amber-400",
-    arrowBg: "bg-slate-100",
+    iconBg: "bg-zinc-200",
+    iconColor: "text-slate-700",
+    arrowBg: "bg-zinc-200",
     arrowColor: "text-slate-600",
-    border: "border border-amber-100",
+    border: "border border-yellow-200",
   },
   {
     title: "409A Valuation Services",
@@ -80,14 +80,14 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
-    bg: "bg-amber-400",
+    bg: "bg-yellow-400",
     textColor: "text-slate-900",
     descColor: "text-slate-700",
-    iconBg: "bg-violet-600",
-    iconColor: "text-white",
+    iconBg: "bg-black",
+    iconColor: "text-yellow-400",
     arrowBg: "bg-white/60",
     arrowColor: "text-slate-700",
-    border: "border border-amber-300",
+    border: "border border-yellow-300",
   },
   {
     title: "Payroll Services",
@@ -98,14 +98,14 @@ const services = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     ),
-    bg: "bg-white",
+    bg: "bg-zinc-50",
     textColor: "text-slate-900",
     descColor: "text-slate-500",
-    iconBg: "bg-violet-100",
-    iconColor: "text-violet-600",
-    arrowBg: "bg-slate-100",
-    arrowColor: "text-violet-600",
-    border: "border border-slate-200",
+    iconBg: "bg-zinc-200",
+    iconColor: "text-slate-700",
+    arrowBg: "bg-zinc-200",
+    arrowColor: "text-slate-600",
+    border: "border border-yellow-200",
   },
 ];
 
@@ -116,7 +116,7 @@ export default function Services() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <div className="reveal">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-violet-50 border border-violet-200/60 text-violet-600 text-sm font-semibold mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-sm font-semibold mb-6">
               Our Services
             </span>
           </div>

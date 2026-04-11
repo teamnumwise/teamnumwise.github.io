@@ -79,14 +79,14 @@ export default function Testimonials() {
       className="py-16 lg:py-20 bg-white relative overflow-hidden"
     >
       {/* Background */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-violet-50 rounded-full blur-[120px] -z-10" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-amber-50 rounded-full blur-[120px] -z-10" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-yellow-50 rounded-full blur-[120px] -z-10" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-slate-50 rounded-full blur-[120px] -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <div className="reveal">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200/60 text-emerald-600 text-sm font-semibold mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-sm font-semibold mb-6">
               Client Success Stories
             </span>
           </div>

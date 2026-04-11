@@ -50,7 +50,7 @@
 .animate-scale-in { animation: scaleIn 0.6s ease-out forwards; }
 
 .gradient-text {
-  background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 50%, #0ea5e9 100%);
+  background: linear-gradient(135deg, #111827 0%, #ca8a04 50%, #111827 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -120,7 +120,7 @@
 
 /* ===== Dot Pattern ===== */
 .dot-pattern {
-  background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
+  background-image: radial-gradient(circle, #d1d5db 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
@@ -142,12 +142,12 @@ body {
 
 /* ===== Service Icon Gradient ===== */
 .icon-gradient {
-  background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+  background: linear-gradient(135deg, #111827, #ca8a04);
 }
 
 /* ===== Number glow ===== */
 .number-glow {
-  text-shadow: 0 0 40px rgba(14, 165, 233, 0.3);
+  text-shadow: 0 0 40px rgba(202, 138, 4, 0.25);
 }
 
 /* ===== Timeline connector ===== */
@@ -161,7 +161,7 @@ body {
   right: -2rem;
   width: 2rem;
   height: 2px;
-  background: linear-gradient(90deg, #0ea5e9, #e2e8f0);
+  background: linear-gradient(90deg, #ca8a04, #e5e7eb);
 }
 .timeline-connector:last-child::after {
   display: none;

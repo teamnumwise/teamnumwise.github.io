@@ -38,7 +38,7 @@ export default function FAQ() {
         {/* Header */}
         <div className="text-center mb-16 lg:mb-20">
           <div className="reveal">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200/60 text-amber-600 text-sm font-semibold mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-yellow-50 border border-yellow-200/60 text-yellow-600 text-sm font-semibold mb-6">
               FAQ
             </span>
           </div>
@@ -49,7 +49,7 @@ export default function FAQ() {
           <p className="reveal text-lg text-slate-500 leading-relaxed">
             Everything you need to know about working with NumWise. Can&apos;t
             find what you&apos;re looking for?{" "}
-            <a href="#contact" className="text-sky-500 hover:text-sky-600 font-medium">
+            <a href="#contact" className="text-yellow-600 hover:text-yellow-700 font-medium">
               Reach out to us
             </a>
             .
@@ -63,7 +63,7 @@ export default function FAQ() {
               key={i}
               className={`reveal reveal-delay-${Math.min(i + 1, 4)} rounded-2xl border transition-all duration-300 ${
                 openIndex === i
-                  ? "border-sky-200 bg-sky-50/30 shadow-sm"
+                  ? "border-yellow-300 bg-yellow-50/30 shadow-sm"
                   : "border-slate-100 bg-white hover:border-slate-200"
               }`}
             >
@@ -74,7 +74,7 @@ export default function FAQ() {
               >
                 <span
                   className={`font-semibold transition-colors ${
-                    openIndex === i ? "text-sky-700" : "text-slate-900"
+                    openIndex === i ? "text-yellow-700" : "text-slate-900"
                   }`}
                 >
                   {faq.q}
@@ -82,7 +82,7 @@ export default function FAQ() {
                 <div
                   className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
                     openIndex === i
-                      ? "bg-sky-500 text-white rotate-180"
+                      ? "bg-yellow-400 text-black rotate-180"
                       : "bg-slate-100 text-slate-500"
                   }`}
                 >
