@@ -76,7 +76,7 @@ export default function Process() {
               {/* Connector Line (desktop only) */}
               {i < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-10 left-[calc(50%+2rem)] right-0 h-[2px] z-0">
-                  <div className="w-full h-full bg-gradient-to-r from-yellow-300 to-slate-200 rounded-full" />
+                  <div className="w-full h-full bg-zinc-200 rounded-full" />
                 </div>
               )}
 

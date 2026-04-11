@@ -157,7 +157,7 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="reveal rounded-2xl bg-gradient-to-r from-yellow-500/10 to-yellow-400/5 border border-white/[0.06] p-8 sm:p-10 mb-16">
+        <div className="reveal rounded-2xl bg-zinc-900 border border-white/[0.06] p-8 sm:p-10 mb-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
               <h4 className="text-white font-bold text-lg mb-2">

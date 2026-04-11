@@ -50,12 +50,7 @@
 .animate-scale-in { animation: scaleIn 0.6s ease-out forwards; }
 
 .gradient-text {
-  background: linear-gradient(135deg, #111827 0%, #ca8a04 50%, #111827 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 4s ease infinite;
+  color: #ca8a04;
 }
 
 /* ===== Scroll Reveal ===== */
@@ -104,19 +99,6 @@
   position: relative;
   overflow: hidden;
 }
-.btn-shine::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
-  transition: left 0.6s ease;
-}
-.btn-shine:hover::after {
-  left: 200%;
-}
 
 /* ===== Dot Pattern ===== */
 .dot-pattern {
@@ -142,7 +124,7 @@ body {
 
 /* ===== Service Icon Gradient ===== */
 .icon-gradient {
-  background: linear-gradient(135deg, #111827, #ca8a04);
+  background: #111827;
 }
 
 /* ===== Number glow ===== */
@@ -161,7 +143,7 @@ body {
   right: -2rem;
   width: 2rem;
   height: 2px;
-  background: linear-gradient(90deg, #ca8a04, #e5e7eb);
+  background: #e5e7eb;
 }
 .timeline-connector:last-child::after {
   display: none;

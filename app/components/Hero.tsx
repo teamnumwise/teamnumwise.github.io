@@ -3,9 +3,7 @@ export default function Hero() {
     <section className="relative min-h-[90vh] flex items-center pt-20 pb-12 overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 right-10 w-[500px] h-[500px] bg-sky-100/60 rounded-full blur-[100px]" />
-        <div className="absolute bottom-10 left-10 w-[400px] h-[400px] bg-violet-100/50 rounded-full blur-[100px]" />
-        <div className="absolute inset-0 dot-pattern opacity-[0.25]" />
+        <div className="absolute inset-0 dot-pattern opacity-[0.15]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -13,12 +11,12 @@ export default function Hero() {
           {/* Left Content */}
           <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-50 border border-sky-200/60">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-100 border border-zinc-200">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500" />
               </span>
-              <span className="text-sm font-medium text-sky-700">
+              <span className="text-sm font-medium text-slate-700">
                 Trusted by 500+ businesses nationwide
               </span>
             </div>
@@ -109,7 +107,7 @@ export default function Hero() {
                 className="w-full h-auto object-cover"
                 loading="eager"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-black/10" />
             </div>
 
             {/* Floating Card - Revenue */}

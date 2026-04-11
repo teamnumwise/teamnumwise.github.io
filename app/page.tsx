@@ -111,7 +111,7 @@ function IndustriesSection() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-slate-900/20" />
+                <div className="absolute inset-0 bg-black/60" />
               </div>
 
               {/* Content */}
@@ -163,12 +163,12 @@ function CTASection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="reveal relative rounded-[2rem] overflow-hidden">
           {/* Gradient Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black via-zinc-900 to-black" />
+          <div className="absolute inset-0 bg-black" />
           <div className="absolute inset-0 opacity-10">
             <div className="dot-pattern w-full h-full" />
           </div>
           {/* Decorative shapes */}
-          <div className="absolute top-0 right-0 w-80 h-80 bg-yellow-400/10 rounded-full blur-[100px]" />
+          <div className="absolute top-0 right-0 w-80 h-80 bg-yellow-400/5 rounded-full blur-[100px]" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-yellow-400/5 rounded-full blur-[80px]" />
           <div className="absolute top-10 right-10 w-20 h-20 border border-white/10 rounded-2xl rotate-12" />
           <div className="absolute bottom-10 left-10 w-16 h-16 border border-white/10 rounded-full" />
@@ -240,7 +240,7 @@ function CTASection() {
                 className="w-full h-full object-cover object-top"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-black/50" />
 
               {/* Floating Stats Card */}
               <div className="absolute bottom-8 left-8 bg-white/95 backdrop-blur-sm rounded-2xl p-5 shadow-2xl">
