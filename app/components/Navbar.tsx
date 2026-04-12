@@ -1,16 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const links = [
     { name: "Services", href: "#services" },
@@ -21,113 +14,84 @@ export default function Navbar() {
   ];
 
   return (
-    <header
-      id="navbar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "glass shadow-lg border-b border-slate-200/50 py-2"
-          : "bg-transparent py-4"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14 md:h-16">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-binance-white border-b border-binance-border h-[64px] flex items-center">
+      <div className="w-full max-w-[1200px] mx-auto px-4 lg:px-8">
+        <div className="flex items-center justify-between w-full">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-xl bg-black flex items-center justify-center shadow-lg shadow-black/20 group-hover:shadow-black/40 transition-shadow">
-              <svg
-                className="w-6 h-6 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <span className="text-xl font-extrabold tracking-tight">
-              Num<span className="gradient-text">Wise</span>
+          <a href="#" className="flex items-center gap-2 group">
+            <svg
+              className="w-8 h-8 text-binance-yellow"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+            <span className="text-xl font-bold tracking-tight text-binance-ink">
+              NumWise
             </span>
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 ml-auto mr-8">
             {links.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors relative group"
+                className="text-[14px] font-semibold text-binance-text hover:text-binance-hover transition-colors"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black rounded-full transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center">
-            <a
-              href="#contact"
-              className="inline-flex items-center px-6 py-2.5 rounded-full bg-yellow-400 text-black text-sm font-semibold shadow-lg shadow-yellow-400/25 hover:shadow-yellow-400/40 hover:bg-yellow-300 transition-all duration-300 hover:scale-[1.04] btn-shine"
-            >
-              Schedule a Call
+            <a href="#contact" className="btn-primary-pill text-[16px]">
+              Get Started
             </a>
           </div>
 
           {/* Mobile Hamburger */}
           <button
-            className="lg:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+            className="lg:hidden p-2 text-binance-ink"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
-            <div className="w-6 h-5 flex flex-col justify-between relative">
-              <span
-                className={`block w-full h-0.5 bg-slate-700 rounded transition-all duration-300 origin-center ${
-                  mobileOpen ? "rotate-45 translate-y-[9px]" : ""
-                }`}
-              />
-              <span
-                className={`block w-full h-0.5 bg-slate-700 rounded transition-all duration-300 ${
-                  mobileOpen ? "opacity-0 scale-0" : ""
-                }`}
-              />
-              <span
-                className={`block w-full h-0.5 bg-slate-700 rounded transition-all duration-300 origin-center ${
-                  mobileOpen ? "-rotate-45 -translate-y-[9px]" : ""
-                }`}
-              />
-            </div>
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              {mobileOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden transition-all duration-400 overflow-hidden ${
-          mobileOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        className={`absolute top-[64px] left-0 right-0 bg-binance-white border-b border-binance-border transition-all duration-300 lg:hidden overflow-hidden ${
+          mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-white/95 backdrop-blur-xl border-t border-slate-100 px-6 py-5 space-y-1">
+        <div className="px-4 py-4 space-y-2 shadow-binance-subtle">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="block py-3 px-4 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-50 font-medium transition-colors"
+              className="block py-3 px-4 rounded-md text-[16px] font-semibold text-binance-text hover:bg-binance-snow"
               onClick={() => setMobileOpen(false)}
             >
               {link.name}
             </a>
           ))}
-          <div className="pt-4">
+          <div className="pt-4 pb-2 px-4">
             <a
               href="#contact"
-              className="block text-center py-3.5 rounded-full bg-yellow-400 text-black font-semibold shadow-lg"
+              className="btn-primary-pill w-full text-center"
               onClick={() => setMobileOpen(false)}
             >
-              Schedule a Call
+              Get Started
             </a>
           </div>
         </div>

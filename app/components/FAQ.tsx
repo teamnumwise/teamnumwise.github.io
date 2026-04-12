@@ -5,27 +5,27 @@ import { useState } from "react";
 const faqs = [
   {
     q: "What makes NumWise different from other accounting firms?",
-    a: "NumWise combines the expertise of seasoned CPAs and CFOs with modern technology. We don't just crunch numbers — we provide strategic financial guidance, real-time dashboards, and proactive tax planning. Our integrated team approach means you get bookkeepers, controllers, and advisors at a fraction of the cost of hiring in-house.",
+    a: "NumWise combines the expertise of seasoned CPAs and CFOs with modern technology. We don't just crunch numbers — we provide strategic financial guidance, real-time dashboards, and proactive tax planning.",
   },
   {
     q: "How much do your services cost?",
-    a: "Our pricing is customized based on your specific needs, business size, and the services required. Plans start at $500/month for basic bookkeeping and scale based on complexity. We offer month-to-month engagements with transparent, fixed pricing — no hidden fees or surprise charges.",
+    a: "Our pricing is customized based on your specific needs, business size, and the services required. Plans start at $500/month for basic bookkeeping and scale based on complexity.",
   },
   {
     q: "What accounting software do you work with?",
-    a: "We primarily work with QuickBooks Online, Xero, and NetSuite, but we have experience with virtually every major accounting platform. We can also help migrate your existing data to a more suitable platform if needed, ensuring a seamless transition.",
+    a: "We primarily work with QuickBooks Online, Xero, and NetSuite, but we have experience with virtually every major accounting platform. We can also help migrate your existing data.",
   },
   {
     q: "How quickly can you get started with my business?",
-    a: "Our typical onboarding takes 1-2 weeks. We handle everything — connecting your bank accounts, setting up your chart of accounts, migrating historical data, and producing your first set of clean financials. Many clients see their first reports within the first month.",
+    a: "Our typical onboarding takes 1-2 weeks. We handle everything — connecting your bank accounts, setting up your chart of accounts, migrating historical data, and producing your first set of financials.",
   },
   {
     q: "Is NumWise suitable for startups and small businesses?",
-    a: "Absolutely. We work with businesses at every stage — from pre-revenue startups to established companies doing $50M+ in revenue. Our Startup Booster package is specifically designed for early-stage companies, providing essential bookkeeping, tax prep, and fundraising-ready financials.",
+    a: "Absolutely. We work with businesses at every stage — from pre-revenue startups to established companies doing $50M+ in revenue. Our Startup Booster package is specifically designed for early-stage companies.",
   },
   {
     q: "How do you ensure the security of our financial data?",
-    a: "We take data security extremely seriously. All data is encrypted in transit and at rest using bank-level (256-bit) encryption. We use secure, SOC 2 compliant cloud systems, enforce multi-factor authentication, and follow strict access controls. Our team undergoes regular security training and background checks.",
+    a: "We take data security extremely seriously. All data is encrypted in transit and at rest using bank-level encryption. We use secure, SOC 2 compliant cloud systems and enforce multi-factor authentication.",
   },
 ];
 
@@ -33,65 +33,54 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-16 lg:py-20 bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-[64px] lg:py-[80px] bg-binance-white border-t border-binance-border">
+      <div className="w-full max-w-[800px] mx-auto px-4 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16 lg:mb-20">
-          <div className="reveal">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-yellow-50 border border-yellow-200/60 text-yellow-600 text-sm font-semibold mb-6">
-              FAQ
-            </span>
-          </div>
-          <h2 className="reveal text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6">
-            Frequently Asked{" "}
-            <span className="gradient-text">Questions</span>
+        <div className="text-center mb-[64px]">
+          <h2 className="text-[34px] font-bold text-binance-ink mb-4 leading-[1.00]">
+            Frequently Asked Questions
           </h2>
-          <p className="reveal text-lg text-slate-500 leading-relaxed">
-            Everything you need to know about working with NumWise. Can&apos;t
-            find what you&apos;re looking for?{" "}
-            <a href="#contact" className="text-yellow-600 hover:text-yellow-700 font-medium">
-              Reach out to us
-            </a>
-            .
+          <p className="text-[16px] font-medium text-binance-slate leading-[1.50]">
+            Everything you need to know about working with NumWise.
           </p>
         </div>
 
         {/* Accordion */}
-        <div className="space-y-4">
+        <div className="space-y-[16px]">
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className={`reveal reveal-delay-${Math.min(i + 1, 4)} rounded-2xl border transition-all duration-300 ${
+              className={`rounded-[12px] border transition-200 ${
                 openIndex === i
-                  ? "border-yellow-300 bg-yellow-50/30 shadow-sm"
-                  : "border-slate-100 bg-white hover:border-slate-200"
+                  ? "border-binance-yellow bg-binance-white shadow-binance-subtle"
+                  : "border-binance-border bg-binance-white"
               }`}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between p-6 text-left gap-4"
+                className="w-full flex items-center justify-between px-6 py-5 text-left gap-4"
                 aria-expanded={openIndex === i}
               >
                 <span
-                  className={`font-semibold transition-colors ${
-                    openIndex === i ? "text-yellow-700" : "text-slate-900"
+                  className={`text-[16px] font-semibold transition-colors ${
+                    openIndex === i ? "text-binance-yellow" : "text-binance-ink"
                   }`}
                 >
                   {faq.q}
                 </span>
                 <div
-                  className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                  className={`flex-shrink-0 w-8 h-8 rounded-[6px] flex items-center justify-center transition-transform duration-300 ${
                     openIndex === i
-                      ? "bg-yellow-400 text-black rotate-180"
-                      : "bg-slate-100 text-slate-500"
+                      ? "text-binance-yellow rotate-180"
+                      : "text-binance-slate"
                   }`}
                 >
                   <svg
-                    className="w-4 h-4"
+                    className="w-5 h-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    strokeWidth={2.5}
+                    strokeWidth={2}
                   >
                     <path
                       strokeLinecap="round"
@@ -102,13 +91,13 @@ export default function FAQ() {
                 </div>
               </button>
               <div
-                className={`accordion-body overflow-hidden ${
+                className={`overflow-hidden transition-all duration-300 ${
                   openIndex === i
                     ? "max-h-[500px] opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="px-6 pb-6 text-slate-500 leading-relaxed">
+                <div className="px-6 pb-6 pt-0 text-[14px] font-medium text-binance-slate leading-[1.50]">
                   {faq.a}
                 </div>
               </div>

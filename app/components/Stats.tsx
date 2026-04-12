@@ -69,39 +69,27 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section id="about" className="relative py-16 lg:py-20 bg-black overflow-hidden">
-      {/* Background Decorations */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-yellow-400/3 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-yellow-400/3 rounded-full blur-[120px]" />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section id="about" className="py-[64px] lg:py-[80px] bg-binance-dark">
+      <div className="w-full max-w-[1200px] mx-auto px-4 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-          <div className="reveal">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-sm font-semibold mb-6">
-              Why Choose NumWise
-            </span>
-          </div>
-          <h2 className="reveal text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-6">
-            Numbers That Speak{" "}
-            <span className="gradient-text">for Themselves</span>
+        <div className="text-center max-w-3xl mx-auto mb-[64px]">
+          <h2 className="text-[34px] font-bold text-binance-white mb-4 leading-[1.00]">
+            Trusted by Growing Businesses
           </h2>
-          <p className="reveal text-lg text-slate-400 leading-relaxed">
+          <p className="text-[16px] font-medium text-binance-slate leading-[1.50]">
             We don&apos;t just track your finances — we transform them into your
-            competitive advantage. Here&apos;s why businesses trust NumWise.
+            competitive advantage.
           </p>
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-[24px]">
           {stats.map((stat, i) => (
             <div
               key={stat.label}
-              className={`reveal reveal-delay-${i + 1} text-center p-8 rounded-2xl bg-white/[0.04] border border-white/[0.06] hover:bg-white/[0.07] transition-all duration-500`}
+              className="text-center p-8 rounded-[12px] bg-binance-card border border-binance-card shadow-binance-subtle"
             >
-              <div className="text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold text-white number-glow mb-3">
+              <div className="text-[40px] font-bold text-binance-white mb-2 leading-[1.08]">
                 <Counter
                   end={stat.value}
                   suffix={stat.suffix}
@@ -109,7 +97,7 @@ export default function Stats() {
                   decimals={stat.decimals || 0}
                 />
               </div>
-              <div className="text-sm sm:text-base text-slate-400 font-medium">
+              <div className="text-[14px] text-binance-slate font-medium">
                 {stat.label}
               </div>
             </div>
@@ -117,16 +105,16 @@ export default function Stats() {
         </div>
 
         {/* Trust Row */}
-        <div className="reveal mt-16 pt-16 border-t border-white/[0.06]">
-          <p className="text-center text-sm text-slate-500 mb-8 font-medium uppercase tracking-wider">
+        <div className="mt-[64px] pt-[32px] border-t border-binance-card">
+          <p className="text-center text-[12px] text-binance-muted mb-8 font-semibold uppercase tracking-wide">
             Trusted integrations & partnerships
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 lg:gap-16 opacity-40">
+          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 lg:gap-16 opacity-60">
             {["QuickBooks", "Xero", "Gusto", "Stripe", "Shopify", "FreshBooks"].map(
               (name) => (
                 <span
                   key={name}
-                  className="text-white font-bold text-lg sm:text-xl tracking-tight"
+                  className="text-binance-slate font-bold text-[20px] tracking-tight"
                 >
                   {name}
                 </span>

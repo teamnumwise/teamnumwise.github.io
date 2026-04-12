@@ -57,11 +57,11 @@ const testimonials = [
 
 function StarRating() {
   return (
-    <div className="flex gap-0.5">
+    <div className="flex gap-1">
       {[...Array(5)].map((_, i) => (
         <svg
           key={i}
-          className="w-4 h-4 text-amber-400"
+          className="w-4 h-4 text-binance-yellow"
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -74,99 +74,53 @@ function StarRating() {
 
 export default function Testimonials() {
   return (
-    <section
-      id="testimonials"
-      className="py-16 lg:py-20 bg-white relative overflow-hidden"
-    >
-      {/* Background */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-zinc-50 rounded-full blur-[120px] -z-10" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-zinc-50 rounded-full blur-[120px] -z-10" />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="testimonials" className="py-[64px] lg:py-[80px] bg-binance-dark">
+      <div className="w-full max-w-[1200px] mx-auto px-4 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-          <div className="reveal">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-sm font-semibold mb-6">
-              Client Success Stories
-            </span>
-          </div>
-          <h2 className="reveal text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6">
-            Real Accountants. Real Insights.{" "}
-            <span className="gradient-text">Real Results.</span>
+        <div className="text-center max-w-3xl mx-auto mb-[64px]">
+          <h2 className="text-[34px] font-bold text-binance-white mb-4 leading-[1.00]">
+            Real Accountants. Real Results.
           </h2>
-          <p className="reveal text-lg text-slate-500 leading-relaxed">
+          <p className="text-[16px] font-medium text-binance-slate leading-[1.50]">
             Join hundreds of business leaders who trust NumWise to manage their
             finances, optimize their operations, and accelerate growth.
           </p>
         </div>
 
         {/* Testimonials Masonry Grid */}
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 lg:gap-8 space-y-6 lg:space-y-8">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-[24px] space-y-[24px]">
           {testimonials.map((t, i) => (
             <div
               key={t.name}
-              className={`reveal reveal-delay-${Math.min(i + 1, 5)} break-inside-avoid group bg-white rounded-2xl p-7 lg:p-8 border border-slate-100 shadow-sm hover:shadow-xl hover:border-slate-200 transition-all duration-500`}
+              className="break-inside-avoid bg-binance-card rounded-[12px] p-6 border border-binance-card shadow-binance-subtle transition-200 shadow-binance-hover hover:border-binance-yellow/30"
             >
               {/* Stars */}
               <StarRating />
 
               {/* Quote */}
-              <blockquote className="text-slate-600 leading-relaxed mt-5 mb-7 text-[0.95rem]">
+              <blockquote className="text-binance-slate leading-[1.50] mt-4 mb-6 text-[14px] font-medium">
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
 
               {/* Author */}
-              <div className="flex items-center gap-4 pt-5 border-t border-slate-100">
+              <div className="flex items-center gap-4 pt-4 border-t border-binance-border/10">
                 <img
                   src={t.image}
                   alt={t.name}
-                  className="w-12 h-12 rounded-full object-cover ring-2 ring-slate-100"
+                  className="w-10 h-10 rounded-full object-cover"
                   loading="lazy"
                 />
                 <div>
-                  <div className="font-bold text-slate-900 text-sm">
+                  <div className="font-bold text-binance-white text-[14px]">
                     {t.name}
                   </div>
-                  <div className="text-sm text-slate-400">
+                  <div className="text-[12px] text-binance-muted">
                     {t.role}, {t.company}
                   </div>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Trust Bar */}
-        <div className="reveal mt-16 text-center">
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-slate-50 border border-slate-100">
-            <div className="flex -space-x-2">
-              {testimonials.slice(0, 4).map((t, i) => (
-                <img
-                  key={i}
-                  src={t.image}
-                  alt=""
-                  className="w-8 h-8 rounded-full border-2 border-white object-cover"
-                  loading="lazy"
-                />
-              ))}
-            </div>
-            <div className="text-sm">
-              <span className="font-bold text-slate-900">500+</span>{" "}
-              <span className="text-slate-500">businesses trust NumWise</span>
-            </div>
-            <div className="flex gap-0.5 ml-1">
-              {[...Array(5)].map((_, i) => (
-                <svg
-                  key={i}
-                  className="w-3.5 h-3.5 text-amber-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

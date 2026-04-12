@@ -27,33 +27,25 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-slate-400 pt-20 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-binance-dark pt-[80px] pb-[32px] border-t border-binance-card">
+      <div className="w-full max-w-[1200px] mx-auto px-4 lg:px-8">
         {/* Top Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-[64px]">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center gap-2.5 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-yellow-400 flex items-center justify-center">
-                <svg
-                  className="w-6 h-6 text-black"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <span className="text-xl font-extrabold text-white tracking-tight">
+            <a href="#" className="flex items-center gap-2 mb-6">
+              <svg
+                className="w-8 h-8 text-binance-yellow"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+              <span className="text-[20px] font-bold text-binance-white tracking-tight">
                 NumWise
               </span>
             </a>
-            <p className="text-slate-400 leading-relaxed mb-6 max-w-sm">
+            <p className="text-binance-slate text-[14px] leading-[1.50] font-medium mb-6 max-w-sm">
               Expert accounting, bookkeeping, and financial advisory services
               that help growing businesses gain clarity, save money, and scale
               confidently.
@@ -89,7 +81,7 @@ export default function Footer() {
                 <a
                   key={social.name}
                   href="#"
-                  className="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-300"
+                  className="w-10 h-10 rounded-[6px] bg-binance-card hover:bg-binance-snow/10 flex items-center justify-center text-binance-slate hover:text-binance-white transition-200"
                   aria-label={social.name}
                 >
                   {social.icon}
@@ -100,7 +92,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-5 uppercase tracking-wider">
+            <h4 className="text-binance-white font-bold text-[16px] mb-4">
               Services
             </h4>
             <ul className="space-y-3">
@@ -108,7 +100,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-sm hover:text-white transition-colors duration-200"
+                    className="text-[14px] text-binance-slate hover:text-binance-white transition-200"
                   >
                     {link.name}
                   </a>
@@ -119,7 +111,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-5 uppercase tracking-wider">
+            <h4 className="text-binance-white font-bold text-[16px] mb-4">
               Company
             </h4>
             <ul className="space-y-3">
@@ -127,7 +119,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-sm hover:text-white transition-colors duration-200"
+                    className="text-[14px] text-binance-slate hover:text-binance-white transition-200"
                   >
                     {link.name}
                   </a>
@@ -138,7 +130,7 @@ export default function Footer() {
 
           {/* Industries */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-5 uppercase tracking-wider">
+            <h4 className="text-binance-white font-bold text-[16px] mb-4">
               Industries
             </h4>
             <ul className="space-y-3">
@@ -146,7 +138,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-sm hover:text-white transition-colors duration-200"
+                    className="text-[14px] text-binance-slate hover:text-binance-white transition-200"
                   >
                     {link.name}
                   </a>
@@ -157,24 +149,24 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="reveal rounded-2xl bg-zinc-900 border border-white/[0.06] p-8 sm:p-10 mb-16">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div className="bg-binance-card rounded-[12px] p-8 mb-[64px] border border-binance-border/10 shadow-binance-subtle">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <h4 className="text-white font-bold text-lg mb-2">
-                Stay updated with financial insights
+              <h4 className="text-binance-white font-bold text-[20px] mb-2 leading-[1.00]">
+                Stay updated
               </h4>
-              <p className="text-slate-400 text-sm">
+              <p className="text-binance-slate text-[14px] font-medium leading-[1.50]">
                 Get expert tips, tax deadlines, and growth strategies delivered to
                 your inbox.
               </p>
             </div>
-            <div className="flex w-full sm:w-auto gap-3">
+            <div className="flex w-full md:w-auto gap-3">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-grow sm:w-64 px-5 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/20 transition-all"
+                className="flex-grow md:w-64 px-4 py-2.5 rounded-[8px] bg-binance-dark border border-binance-border/20 text-binance-white placeholder-binance-slate text-[14px] focus:border-binance-yellow focus:outline-none transition-200"
               />
-              <button className="px-6 py-3 rounded-xl bg-yellow-400 text-black text-sm font-semibold hover:bg-yellow-300 hover:shadow-lg hover:shadow-yellow-400/25 transition-all duration-300 whitespace-nowrap">
+              <button className="px-6 py-2.5 rounded-[6px] bg-binance-yellow text-binance-ink text-[14px] font-semibold hover:bg-binance-focus hover:text-white transition-200 whitespace-nowrap">
                 Subscribe
               </button>
             </div>
@@ -182,18 +174,18 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-slate-500">
+        <div className="pt-8 border-t border-binance-card flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-[12px] text-binance-slate">
             &copy; {new Date().getFullYear()} NumWise. All rights reserved.
           </p>
-          <div className="flex items-center gap-6 text-sm">
-            <a href="#" className="hover:text-white transition-colors">
+          <div className="flex items-center gap-6 text-[12px]">
+            <a href="#" className="text-binance-slate hover:text-binance-white transition-200">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="#" className="text-binance-slate hover:text-binance-white transition-200">
               Terms of Service
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="#" className="text-binance-slate hover:text-binance-white transition-200">
               Cookie Policy
             </a>
           </div>
