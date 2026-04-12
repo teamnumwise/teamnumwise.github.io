@@ -247,3 +247,40 @@ html {
 ::-webkit-scrollbar-track { background: #F5F5F5; }
 ::-webkit-scrollbar-thumb { background: #848E9C; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #1E2026; }
+
+/* ============================================================
+   DARK MODE (Manual Toggle)
+   ============================================================ */
+.dark body {
+  background-color: var(--color-binance-dark);
+  color: var(--color-binance-white);
+}
+
+/* Background color flips */
+.dark .bg-binance-white { background-color: var(--color-binance-dark) !important; }
+.dark .bg-binance-snow { background-color: #1A1A1C !important; }
+
+/* Maintain the dual-rhythm alternation by dropping the dark sections even deeper */
+.dark .bg-binance-dark { background-color: #0E0D11 !important; }
+.dark .bg-binance-card { background-color: #1A1A1E !important; }
+
+/* Text color flips */
+.dark .text-binance-ink { color: var(--color-binance-white) !important; }
+.dark .text-binance-text { color: #E6E8EA !important; }
+
+/* Borders and elements */
+.dark .border-binance-border { border-color: #32313A !important; }
+.dark .border-binance-white { border-color: var(--color-binance-dark) !important; }
+
+/* Scrollbar override */
+.dark ::-webkit-scrollbar-track { background: var(--color-binance-dark); }
+.dark ::-webkit-scrollbar-thumb { background: #32313A; }
+.dark ::-webkit-scrollbar-thumb:hover { background: #848E9C; }
+
+/* Buttons */
+.dark .btn-secondary-pill {
+  background-color: var(--color-binance-dark);
+}
+.dark .btn-primary-pill {
+  color: #1E2026 !important;
+}
