@@ -50,6 +50,17 @@ export default function Footer() {
               that help growing businesses gain clarity, save money, and scale
               confidently.
             </p>
+            <div className="mb-8">
+              <a 
+                href="mailto:info@numwise.co" 
+                className="text-binance-white hover:text-binance-yellow transition-200 text-[14px] font-semibold flex items-center gap-2"
+              >
+                <svg className="w-5 h-5 text-binance-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                info@numwise.co
+              </a>
+            </div>
             {/* Social Icons */}
             <div className="flex items-center gap-4">
               {[

@@ -140,10 +140,10 @@ function CTASection() {
               Schedule a Free Consultation
             </a>
             <a
-              href="tel:+18001234567"
+              href="mailto:info@numwise.co"
               className="btn-secondary-pill text-binance-white bg-transparent border-binance-slate hover:bg-binance-hover hover:border-binance-hover hover:text-white text-[16px] px-10"
             >
-              (800) 123-4567
+              info@numwise.co
             </a>
           </div>
 
